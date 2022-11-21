@@ -6,7 +6,11 @@
 
     <groupId>com.houari</groupId>
     <artifactId>Calculator</artifactId>
+<<<<<<< HEAD
     <version>1.0.0</version>
+=======
+    <version>1.0-SNAPSHOT.1</version>
+>>>>>>> 6878ba1c2803cab55c550f972db87140eef8871b
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
