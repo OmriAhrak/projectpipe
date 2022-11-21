@@ -1,4 +1,4 @@
-FROM maven:3.6.3-openjdk-14-slim AS build
+FROM maven:latest AS build
 RUN mkdir /app
 WORKDIR /app
 COPY . /app
