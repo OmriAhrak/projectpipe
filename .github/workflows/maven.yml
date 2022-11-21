@@ -53,3 +53,12 @@ jobs:
 
     - name: push
       run: docker push ${{ secrets.DOCKER_HUB_USERNAME }}/calc:${{steps.bump.outputs.version}}
+
+    - name: executing remote ssh
+      uses: appleboy/ssh-action@master
+      with:
+        host: 3.67.44.196
+        username: ec2-user
+        key: ${{ secrets.KEY }}
+        port: 22
+        script: docker run omriahrak/calc:2.0.0
